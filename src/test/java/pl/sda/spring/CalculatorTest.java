@@ -102,4 +102,16 @@ public class CalculatorTest {
         //then
         Assert.assertEquals(16.0, actual,0.0000001);
     }
+    @Test
+    public void shouldReturnForuForGivenArgumentsOnPowerOperation() {
+        //given
+        double arg1 = 2.00;
+        double arg2 = 2.00;
+
+        //when
+        double actual = calculator.calculate(OperationType.POWEROPERATION, arg1, arg2);
+
+        //then
+        Assert.assertEquals(4, actual,0.0000001);
+    }
 }
